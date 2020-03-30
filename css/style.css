@@ -677,11 +677,12 @@ footer {
   .reserved {
     order: 3;
     width: 100%;
+    text-align: center;
 
   }
 
   .text_r {
-    font-size: 12.2px;
+    font-size: 10px;
     line-height: 1.8;
     color: #ffffff;
 
