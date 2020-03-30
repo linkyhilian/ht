@@ -1,0 +1,699 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Avenir next";
+
+}
+
+body {
+  margin: 0;
+  background: #2a2f33 ;
+
+}
+
+/***********************************************************Contenedores Principales */
+.container_offer {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* flex wrap */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* justify-content */
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container_game {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* flex wrap */
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  /* justify-content */
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container_shop {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* flex wrap */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* justify-content */
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container_footer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Propios */
+  height: 200px;
+}
+
+/***********************************************************Secciones*/
+.offers {
+  background-color: #FF5751;
+  background-image: linear-gradient(60deg, #FF5751, #FFC837);
+  background-repeat: no-repeat;
+}
+
+.game {
+  background-color: white;
+}
+
+.shops {
+  background-color: #FFC837;
+}
+
+footer {
+  background-color: #2a2f33;
+}
+/****************** Contenido de Ofertas*/
+.offer_footer>div>img {
+  /*Tanto En Mobile como en Desktop son el mismo tamaño*/
+  max-width: 227.4px;
+  max-height: 227.4px;
+}
+/****************** Contenido de Tiendas*/
+
+.shop_head,
+.shop_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.shop_items {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* flex wrap */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* justify-content */
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Propios */
+  flex-basis: 100%;
+}
+
+.submit {
+
+  background-color: #FF5751;
+  color: #ffffff;
+  border-radius: 20.5px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit:hover {
+  background-color: rgb(221, 73, 68);
+}
+
+
+.shop_button {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* flex wrap */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* justify-content */
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 138px;
+}
+
+.item_text {
+  margin: 23.7px 48.6px 37.4px 16.6px;
+  width: 187px;
+  height: 50px;
+  font-size: 14.8px;
+  line-height: 1.2;
+  color: #2a2f33;
+}
+
+
+.shop>img {
+  border-bottom: 3px solid #FF5751;
+}
+
+/****************** Contenido de Footer*/
+.text_footer {
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.social_networks {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+}
+
+.logo_container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+}
+
+.reserved {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: flex-end;
+  align-self: flex-end;
+}
+
+
+/************************************ Desktop-Table*/
+@media (min-width:986px) {
+  body {
+    max-width: 100%;
+  }
+
+  .container_main {
+    max-width: 1028px;
+    margin: 0 auto;
+  }
+
+  /************** Conatiner Oferta*/
+  .container_offer {
+    min-height: 630.2px;
+    height: 630px;
+    /*Si no esta se rompe en Internet Explorer*/
+    position: relative;
+  }
+
+  .offer_head>img {
+    width: 287.4px;
+    height: 280px;
+  }
+
+  .offer_footer {
+    /* display flex */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* display direction */
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* flex wrap */
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /* justify-content */
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    /* align-content */
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    /* align-items */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*Propios*/
+    top: 500px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+  }
+
+  /*************** Container Juego*/
+  .container_game {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .game_info {
+    /* display flex */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* display direction */
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* flex wrap */
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /* justify-content */
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    /* align-content */
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    /* align-items */
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    /*Propios*/
+
+    width: 300px;
+
+  }
+
+  .info {
+    width: 100%;
+
+  }
+
+  h3 {
+    margin: 0 0 5px;
+  }
+
+  .title {
+    color: #FF5751;
+    font-weight: bold;
+  }
+
+  .text {
+    color: #154f80;
+  }
+
+  .game_action {
+    width: 400px;
+    height: 400px;
+  }
+
+  .game_action img {
+    width: 396px;
+    height: 396px;
+  }
+
+  .form {
+    padding-top: 16px;
+    max-width: 260px;
+    color: var(--main-color-blue);
+  }
+
+  .container_text {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .action_play {
+    width: 100%;
+    background-color: #FF5751;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+
+  .action_play:hover {
+    background-color: rgb(221, 73, 68);
+  }
+
+  /*************** Container tiendas*/
+  .container_shop {
+    padding-top: 34.2px;
+  }
+
+  .shop {
+    width: 238px;
+    height: 363px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 18.7px;
+  }
+
+  .shop_title {
+    /* display flex */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* display direction */
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* flex wrap */
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* justify-content */
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* align-content */
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    /* align-items */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .style_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 7.2px;
+    color: #2a2f33;
+    margin: 28.6px;
+  }
+
+  .submit {
+    line-height: 1.2;
+    letter-spacing: 1.05px;
+    padding: 10px 27px;
+    margin: 60.1px 0px 29.4px 0px;
+    font-size: 21px;
+  }
+
+  /*************** Container footer*/
+  footer {
+    height: 261.5px;
+  }
+
+  .container_footer {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .social_networks {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+
+  .icon {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*Propios*/
+    height: 100px;
+    width: 280px;
+
+  }
+
+  .text_s {
+    font-size: 21px;
+  }
+
+  .circle_img {
+    border-radius: 150px;
+  }
+
+  .reserved {
+    width: 399px;
+  }
+
+  .text_r {
+    font-size: 15px;
+    line-height: 0.96;
+    color: #ffffff;
+
+  }
+
+  .logo_container {
+    /*Propios*/
+    padding-top: 18px;
+    height: 100px;
+  }
+
+  .logo {
+    height: 53px;
+  }
+
+}
+
+
+/******************************************** Mobile */
+@media(max-width:984px) {
+  body {
+    max-width: 100%;
+  }
+
+  /***************** Conatiner Oferta*/
+  .container_main {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .container_row {
+    min-height: 1024px;
+  }
+
+  .offer_head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 87px;
+    margin-bottom: 20px;
+  }
+
+  .offer_head>img {
+    width: 241.9px;
+    height: 250.6px;
+  }
+
+  .offer_footer {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40.6px;
+  }
+
+  /**************** Container Juego*/
+  .game {
+    display: none;
+  }
+
+  /*************** Container tiendas*/
+  .container_shop {
+    /* display direction */
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .style_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 4.8px;
+    color: #2a2f33;
+    margin: 24px;
+  }
+
+  .shop {
+    width: 238px;
+    height: 363px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 18.7px;
+  }
+
+  .submit {
+    line-height: 1.2;
+    letter-spacing: 1.05px;
+    padding: 10px 27px;
+    font-size: 21px;
+  }
+
+  /*************** Container footer*/
+  footer {
+    height: 100%;
+    padding-top: 21.8px;
+  }
+
+  .container_footer {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .social_networks {
+    order: 0;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .text_s {
+    font-size: 14px;
+    margin-bottom: 14.2px;
+  }
+  .circle_img {
+    border-radius: 150px;
+  }
+
+  .reserved {
+    order: 3;
+    width: 100%;
+
+  }
+
+  .text_r {
+    font-size: 12.2px;
+    line-height: 1.8;
+    color: #ffffff;
+
+  }
+
+  .logo_container {
+    /*Propios*/
+    
+    width: 100%;
+  }
+
+  .logo {
+    height: 38px;
+  }
+}
