@@ -2,13 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Avenir next";
+  font-family: 'Open Sans', sans-serif;
 
 }
 
 body {
   margin: 0;
-  background: #2a2f33 ;
+  
 
 }
 
@@ -441,6 +441,9 @@ footer {
     background-color: rgb(221, 73, 68);
   }
 
+  .boton_modal{
+    display:none
+  }
   /*************** Container tiendas*/
   .container_shop {
     padding-top: 34.2px;
@@ -573,6 +576,9 @@ footer {
 }
 
 
+
+
+
 /******************************************** Mobile */
 @media(max-width:984px) {
   body {
@@ -649,7 +655,7 @@ footer {
   /*************** Container footer*/
   footer {
     height: 100%;
-    padding-top: 21.8px;
+    padding-top: 19.8px;
   }
 
   .container_footer {
@@ -668,7 +674,7 @@ footer {
 
   .text_s {
     font-size: 14px;
-    margin-bottom: 14.2px;
+    margin-bottom: 16.2px;
   }
   .circle_img {
     border-radius: 150px;
@@ -697,4 +703,15 @@ footer {
   .logo {
     height: 38px;
   }
+  .boton_modal{
+
+    border: 2px solid red;
+  }
+  .boton_modal img{
+    border-radius:100%;
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+
 }

@@ -1,0 +1,97 @@
+/* Cuenta Regresiva */
+
+.container_headnav{
+  width: 55px;
+  height: 55px;
+}
+
+ul{
+  padding-inline-start: 0px;
+}
+
+#cuenta{
+  display: flex;
+  justify-content: center;
+}
+.simply-section{
+  font-weight: bold;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.simply-amount{
+  background-color: white;
+  color:#ff0008;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 11px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
+.simply-word{
+  color:#ffffff;
+  font-weight: bold;
+  display: block;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.container_ncuenta{
+  display: flex;
+  flex-direction: column;
+}
+.ntexto{
+  font-size: 14px;
+  color:#ffffff;
+}
+
+.container_ncuenta1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position:fixed;
+  background-color: rgba(0,0,0,0.6) ;
+  width: 100%;
+
+  
+}
+
+.container_center{
+  display: flex;
+  flex-direction: column;
+}
+.ntexto1{
+  font-size: 14px;
+  color:#ffffff;
+  
+}
+
+nav{
+  margin: 0 auto;
+}
+#cuenta1{
+  display: flex; 
+  justify-content: center;
+}
+
+
+/* @media(max-width:768px){
+  .ntexto{
+    display: none;
+  }
+} */
+
+@media(max-width:768px) {
+  #cuenta, .ntexto{
+    display: none
+  }
+}
+@media(min-width:768px) {
+  #cuenta1, .ntexto1, .container_ncuenta1{
+    display: none
+  }
+}
+/* Cuenta Regresiva */

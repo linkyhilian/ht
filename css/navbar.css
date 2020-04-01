@@ -1,0 +1,218 @@
+header {
+
+  background: rgb(255, 87, 81, 0.4);
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav_container {
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+
+  /* align-items */
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /* Propios */
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.nav_container nav{
+  margin: 0;  
+  flex:1;
+  margin-left:70.3px ;
+  }
+.bars_icon{
+  display:none;
+}
+
+ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* justify-content */
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.item a{
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30.6px;
+}
+
+
+
+.nav_logo_container{
+  padding-top:10px;
+
+}
+
+/* Cuenta Regresiva */
+.container_cuentas{
+  order: 3;
+}
+
+.container_headnav{
+  width: 55px;
+  height: 55px;
+}
+
+ul{
+  padding-inline-start: 0px;
+
+}
+
+#cuenta{
+  display: flex;
+  justify-content: center;
+}
+.simply-section{
+  font-weight: bold;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.simply-amount{
+  background-color: white;
+  color:#ff0008;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 11px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
+.simply-word{
+  color:#ffffff;
+  font-weight: bold;
+  display: block;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.container_ncuenta{
+  display: flex;
+  flex-direction: column;
+}
+.ntexto{
+  margin-bottom: 8.7px;
+  font-size: 14px;
+  color:#ffffff;
+}
+
+.container_ncuenta1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position:fixed;
+  background-color: rgba(0,0,0,0.6) ;
+  width: 100%;
+}
+
+.container_center{
+  display: flex;
+  flex-direction: column;
+}
+.ntexto1{
+  font-size: 14px;
+  color:#ffffff;
+  
+}
+
+#cuenta1{
+  display: flex; 
+  justify-content: center;
+}
+
+
+@media(max-width:768px) {
+  #cuenta, .ntexto{
+    display: none
+  }
+}
+
+@media(min-width:768px) {
+  #cuenta1, .ntexto1, .container_ncuenta1{
+    display: none
+  }
+}
+
+.simply-section div .simply-amount:after{
+  content: ":";
+  color: white ;
+  position: relative;
+  top: 1px;
+  right:-17px;
+  font-size: 14px;
+}
+
+.simply-seconds-section div .simply-amount:after{
+  content:none;
+}
+
+/* Cuenta Regresiva */
+
+
+/******************************************** Mobile */
+@media (max-width:984px) {
+  .nav_container {
+
+    /* justify-content */
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    /* align-items */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    /* Propios */
+    width: 100%;
+    padding: 0;
+  }
+
+  .bars_icon{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    position:absolute;
+    left:19px;
+    font-size: 20.5px;
+    }
+
+    .nav_logo_container{
+      padding-top: 15.9px;
+    }
+
+    nav{
+      display: none;  
+      }
+
+      
+}
+
+

@@ -1,0 +1,99 @@
+.nav-sidebar{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  
+  top:57px;
+}
+
+.menu_side_background{
+  background-color: rgba(0,0,0,0.4);
+  width: 100vw;
+  height: 100vh;
+  display:none;
+}
+
+.menu_side_background_active{
+  display:block;
+}
+
+
+.menu_side{
+  /* display flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* display direction */
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* flex wrap */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* justify-content */
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  /* align-content */
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* align-items */
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  /* Propios */
+  position: fixed;
+  width: 70vw;
+  height: 100vh;
+  background-color: white;
+  top:57px;
+  left: -70vw;
+  padding-top:11.8px;
+  transition: 0.2s;
+}
+
+.sidebar_item{
+  color:#010126;
+  padding-left:23px;
+  margin-bottom:23px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.sidebar_item:active{
+  color: red;
+  border-left: 2px solid red;
+}
+
+.sidebar_item.active{
+  color: red;
+  border-left: 2px solid red;
+}
+
+.menu_side_active{
+ display: block;
+ transform:translate(70vw);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Destok-Table */
+
+@media (min-width:986px){
+  .nav-sidebar{
+    display: none;
+  }
+}

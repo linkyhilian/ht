@@ -6,17 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hot Weeks | Distrito Moda</title>
   <link rel="shortcut icon" href="img/others/favicon.webp" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script defer src="fontawesome-free-5.13.0-web/js/all.js"></script>
+  <!--load all styles -->
   <!-- css propios -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/simple-sidebar.css">
 </head>
 
 <body>
+  <header>
+    <div class="nav_container">
+
+      <div class="bars_icon" onclick="sidebarToggle()"><i class="fas fa-bars"></i></div>
+
+      
+      <div class="nav_logo_container"><img class="logo_img" src="img/others/Logo_white.png" alt=""></div>
+      
+      <nav>
+        <ul>
+          <li class="item">
+            <a href="#ofertas">HotWeek</a>
+          </li>
+          <li class="item">
+            <a href="#juego">Juego</a>
+          </li>
+          <li class="item">
+            <a href="#tiendas">Tiendas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container_cuentas">
+        
+          <div class="container_ncuenta">
+            <div class="ntexto">
+              Termina en
+            </div>
+            <div id="cuenta">
+            </div>
+          </div>
+        
+      </div>
+     
+
+    <!-- <nav>
+      <ul class="menu">
+        <li class="bars_icon" onclick="sidebarToggle()"><i class="fas fa-bars"></i></li>
+
+        <li class="logo"><img class="logo_img" src="img/others/Logo_white.png" alt=""></li>
+        <li class="item">
+          <a href="#ofertas">HotSale</a>
+        </li>
+        <li class="item">
+          <a href="#juego">Juego</a>
+        </li>
+        <li class="item">
+          <a href="#tiendas">Tiendas</a>
+        </li>
+        <div class="container_cuentas">
+          <li>
+            <div class="container_ncuenta">
+              <div class="ntexto">
+                Termina en
+              </div>
+              <div id="cuenta">
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </nav> -->
+
+  </div>
+  </header>
+  <!-- Contenedor de Sidebar -->
+<section class="nav-sidebar" > 
+  <div class="menu_side_background"></div>
+  <div class="menu_side">
+
+    <div class="sidebar_item active">HotWeek</div>
+    <div class="sidebar_item ">Tiendas</div>
+
+  </div>
+</section>
+  <!-- Contenedor de Sidebar -->
   <!-- Contenedor de ofertas -->
-  <section class="offers">
+  <section id="ofertas" class="offers">
+
     <div class="container_main">
       <div class="container_offer">
         <div class="offer_head">
           <img src="img/offerts/ht.png" alt="HotSale">
+        </div>
+        <div class="boton_modal">
+          <img src="img/games/boton.jpg" alt="">
         </div>
         <div class="offer_footer">
           <div><img src="img/offerts/Promo1.png" alt=""></div>
@@ -27,41 +112,42 @@
       </div>
     </div>
   </section>
+
   <!-- Contenedor de ofertas -->
 
   <!-- Contenedor de juego -->
-  <section class="game">
+  <section id="juego" class="game">
     <div class="container_main">
       <div class="container_game">
         <div class="game_info">
           <div class="info">
-          <h1 class="title">
-            ¡Probá tu <span> SUERTE! </span>
-          </h1>
-          <div class="text">
-            <h3 class="text">
-              Dale vuelta a la ruleta y consiguí
-            </h3>
-            <h3>uno de nuestros premios</h3>
-            <span class="text">*Para jugar dejanos tu nombre y tu email.</span>
-            <br>
-            <span class="text">*Podés jugar solo una vez.</span>
-            <br>
-            <span class="text">*Si ganás, tendra 15 minutos para reclamar tu premio.</span>
-          </div>
-          <div class="form">
-            <form action="">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" class="container_text" placeholder="">
+            <h1 class="title">
+              ¡Probá tu <span> SUERTE! </span>
+            </h1>
+            <div class="text">
+              <h3 class="text">
+                Dale vuelta a la ruleta y consiguí
+              </h3>
+              <h3>uno de nuestros premios</h3>
+              <span class="text">*Para jugar dejanos tu nombre y tu email.</span>
+              <br>
+              <span class="text">*Podés jugar solo una vez.</span>
+              <br>
+              <span class="text">*Si ganás, tendra 15 minutos para reclamar tu premio.</span>
+            </div>
+            <div class="form">
+              <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="container_text" placeholder="">
 
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" class="container_text" placeholder="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" class="container_text" placeholder="">
 
-              <input type="submit" class="action_play" value="Jugá y Ganá">
-            </form>
+                <input type="submit" class="action_play" value="Jugá y Ganá">
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
 
 
@@ -73,7 +159,7 @@
   </section>
   <!-- Contenedor de ofertas -->
   <!-- Contenedor de tiendas -->
-  <section class="shops">
+  <section id="tiendas" class="shops">
     <div class="container_main">
       <div class="container_shop">
         <div class="shop_title">
@@ -169,7 +255,7 @@
           <span class="text_footer text_s">Seguinos</span>
           <div class="icon">
             <img src="img/social/instagram.png" class='circle_img' alt="">
-            <img src="img/social/facebook.png" class='circle_img' alt="" >
+            <img src="img/social/facebook.png" class='circle_img' alt="">
             <img src="img/social/youtube.png" class='circle_img' alt="">
             <img src="img/social/youtube.png" class='circle_img' alt="">
             <img src="img/social/whatsapps.png" class='circle_img' alt="">
@@ -177,15 +263,21 @@
         </div>
         <div class="reserved">
           <div>
-            <span class="text_footer text_r">© 2017-2020 distritomoda | Todos los Derechos reservados.</span> 
+            <span class="text_footer text_r">© 2017-2020 distritomoda | Todos los Derechos reservados.</span>
+          </div>
         </div>
-      </div>
         <div class="logo_container">
           <img src="img/others/Logo_white.png" class="logo">
         </div>
-    
-  </div>
+
+      </div>
   </footer>
+
+  <script src="js/simplyCountdown.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/sticky.js"></script>
+  <!--load all styles -->
 </body>
 
 </html>
