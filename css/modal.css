@@ -1,90 +1,60 @@
-.modal { display: none; }
-.modal--show,
-.modal--hide { display: flex; } /* classes fired by js for animation control */
-
-/* This is on the wrapper for the whole modal */
-.modal--align {
-
-width: 100%;
-
-height: 100%;
-
-position: fixed;
-
-left: 0;
-
-top: 0;
-
-background: rgba(0, 0, 0, 0.3);
-
-z-index: 999;
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.modal__container {
-
-position: relative;
-
-width: 100%;
-
-max-width: 600px;
-
-max-height: 800px;
-
-padding: 20px;
-
-margin: 12px;
-
-background: #fff;
+.modal{
+  display: none;
+  position: fixed;
+  
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.4);
+  z-index:1000;
 }
 
-/* The .modal__close class is used in js but is modified '--x' here */
-.modal__close--x {
+.contenido-modal{
+  position: relative;
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0,0.4);
+  animation-name: modal;
+  animation-duration: 1s ;
 
-font-size: 30px; /* this is only because we use unicode for the X in this case */
 
-position: absolute;
-
-top: 3px;
-
-right: 10px;
 }
 
-/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
-/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
-.modal__close--x:hover {
 
-cursor: pointer;
+@keyframes modal{
+  from{top: -330px; opacity: 0;}
+  to{top:0; opacity: 1;}
+
 }
 
-/* Animations */
-/* Open */
-.modal.modal--show {
-
-animation: modal-open 0.3s;
+.close{
+ color: #ff5751;
+ font-size: 30px;
+ font-weight: bold;
 }
 
-@keyframes modal-open {
-
-0%
-
-{ opacity: 0; }
-
-100%
-{ opacity: 1; }
+.close:hover{
+  color:#dd3f39;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Close */
-.modal.modal--hide {
-
-animation: modal-close 0.3s;
+.modal-header, .modal-footer{
+  padding: 8px 16px;
+  background: #34495e ;
+  color: white;
 }
-
-@keyframes modal-close {
-
-0%
-
-{ opacity: 1; }
-
-100%
-{ opacity: 0; }
+.modal-body{
+  padding:20px 16px 
 }

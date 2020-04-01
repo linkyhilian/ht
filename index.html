@@ -91,7 +91,7 @@
   <!-- Contenedor de Sidebar -->
   <section class="nav-sidebar">
     <div class="menu_side_background"></div>
-    
+
     <div class="menu_side">
 
       <div class="sidebar_item "><a data-scroll href="#ofertas">HotWeek</a></div>
@@ -107,21 +107,39 @@
       <div class="container_offer">
         <div class="offer_head">
           <img src="img/offerts/ht.png" alt="HotSale">
-           
+
         </div>
 
         <div class="offer_footer">
+          <div class="boton_modal">
 
-<!-- Modal -->
-      <div class="boton_modal">
-            
-          <img  onclick="sweeatmodalclick()" src="img/games/boton.jpg" alt="">
-        
-      </div>
+            <img id="open_modal" src="img/games/boton.jpg" alt="">
 
-      
+          </div>
 
-<!-- Modal -->
+          <div id="modal" class="modal">
+
+            <div class="flex" id="flex">
+              <div class="contenido-modal">
+                <div class="modal-header flex">
+                  <h2>Testeando</h2>
+                  <span class="close" id="close">cerrar</span>
+
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis atque praesentium sapiente,
+                    maxime sunt fugiat sed asperiores alias quaerat accusantium debitis hic cum distinctio, iusto ipsam,
+                    dolores ea? Ratione.</p>
+                </div>
+                <div class="modal-footer">
+                  Este es el Footer
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+
           <div><img src="img/offerts/Promo1.png" alt=""></div>
           <div><img src="img/offerts/Promo2.png" alt=""></div>
           <div><img src="img/offerts/Promo3.png" alt=""></div>
@@ -304,19 +322,20 @@
   <script src="js/index.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/jquery.sweet-modal.min.js"></script>
+  <script src="js/modal.js"></script>
   <script>
-    function sweeatmodalclick(){
+    function sweeatmodalclick() {
       $.sweetModal({
-	title: 'HTML Content',
-	content: 'You can place <b>anything</b> <i>you</i> want in here.'
-});
+        title: 'HTML Content',
+        content: 'You can place <b>anything</b> <i>you</i> want in here.'
+      });
     }
   </script>
 
 
 
   <!--load all styles -->
-  
+
 </body>
 
 </html>
