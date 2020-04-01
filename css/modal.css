@@ -9,7 +9,6 @@
 .modal{
   display: none;
   position: fixed;
-  
   overflow: auto;
   left: 0;
   top: 0;
@@ -23,7 +22,7 @@
 .contenido-modal{
   position: relative;
   background-color: white;
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0,0.4);
   animation-name: modal;
@@ -44,6 +43,9 @@
  color: #ff5751;
  font-size: 30px;
  font-weight: bold;
+ position: absolute;
+ top: 4px;
+ right: 5px;
 }
 
 .close:hover{
@@ -53,10 +55,27 @@
 }
 
 .modal-header, .modal-footer{
-  padding: 8px 16px;
+  display:flex;
+  justify-content: flex-end;
   color: white;
 }
 
 .modal-body{
-  padding:20px 16px 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  
+  
+}
+.modal_container_action{
+  background-color: #ebeae7;
+  width: 60vh;
+  height: 60vw;
+  flex:1;
+  
+}
+
+.modal_texto{
+  color:#ff5751;
 }
