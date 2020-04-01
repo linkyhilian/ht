@@ -31,9 +31,9 @@ menu_background.addEventListener('click', () =>{
 window.addEventListener('scroll', function() { 
     
 if(!menu_side.classList.contains('menu_side_active')){
-  if (window.pageYOffset > 160) { 
+  if (window.pageYOffset > 136) { 
    img.style.position = 'fixed';
-    img.style.top = '160px';
+    img.style.top = '180px';
     
   } else {
     img.style.position = 'absolute';
