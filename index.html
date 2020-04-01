@@ -8,17 +8,18 @@
   <link rel="shortcut icon" href="img/others/favicon.webp" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script defer src="fontawesome-free-5.13.0-web/js/all.js"></script>
+  <link rel="stylesheet" href="css/jquery.sweet-modal.min.css">
 
   <!--load all styles -->
   <!-- css propios -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/simple-sidebar.css">
+  <link rel="stylesheet" href="css/modal.css">
 
 
   <!-- Modal -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
 
   <!-- Scroll -->
   <script src="js/smooth-scroll.min.js"></script>
@@ -90,6 +91,7 @@
   <!-- Contenedor de Sidebar -->
   <section class="nav-sidebar">
     <div class="menu_side_background"></div>
+    
     <div class="menu_side">
 
       <div class="sidebar_item "><a data-scroll href="#ofertas">HotWeek</a></div>
@@ -105,26 +107,21 @@
       <div class="container_offer">
         <div class="offer_head">
           <img src="img/offerts/ht.png" alt="HotSale">
+           
         </div>
 
         <div class="offer_footer">
-          <!-- Modal -->
-          <div class="boton_modal">
+
+<!-- Modal -->
+      <div class="boton_modal">
             
-              <img  onclick="sweetalertclick()" src="img/games/boton.jpg" alt="">
-            
-          </div>
-          
-          <div class="container">
-            <h1>Seet Alert</h1>
-            <button onclick="sweetalertclick()" type="button" class="w3-button w3-blue"> </button>
-          </div>
-  
+          <img  onclick="sweeatmodalclick()" src="img/games/boton.jpg" alt="">
+        
+      </div>
 
+      
 
-
-
-          <!-- Modal -->
+<!-- Modal -->
           <div><img src="img/offerts/Promo1.png" alt=""></div>
           <div><img src="img/offerts/Promo2.png" alt=""></div>
           <div><img src="img/offerts/Promo3.png" alt=""></div>
@@ -306,12 +303,20 @@
   <script src="js/countdown.js"></script>
   <script src="js/index.js"></script>
   <script src="js/navbar.js"></script>
-  <!--load all styles -->
+  <script src="js/jquery.sweet-modal.min.js"></script>
   <script>
-    function sweetalertclick(){
-      Swal.fire('Hello world!')
+    function sweeatmodalclick(){
+      $.sweetModal({
+	title: 'HTML Content',
+	content: 'You can place <b>anything</b> <i>you</i> want in here.'
+});
     }
   </script>
+
+
+
+  <!--load all styles -->
+  
 </body>
 
 </html>

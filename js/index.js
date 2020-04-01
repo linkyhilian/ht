@@ -1,8 +1,15 @@
 var bars_icon = document.querySelector('.bars_icon');
 var menu_side = document.querySelector('.menu_side');
 var menu_background = document.querySelector('.menu_side_background');
-const img = document.querySelector('.boton_modal');
-const offset = img.getBoundingClientRect();
+var img = document.querySelector('.boton_modal');
+// const offset = img.getBoundingClientRect();
+
+document.querySelector('body').addEventListener('click', function(event){
+  // event.target 
+
+  console.log(event.target)
+
+})
 
 
 
@@ -20,10 +27,6 @@ menu_background.addEventListener('click', () =>{
     sidebarToggle();
     
 });
-
-
-
-
 
 window.addEventListener('scroll', function() { 
     
