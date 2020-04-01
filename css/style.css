@@ -589,10 +589,19 @@ footer {
     max-width: 100%;
   }
 
-  .active a{
-    font-weight: bold;
+  .nav-sidebar a{
+    text-decoration: none;
+    color: black;
   }
 
+  .active_border{
+    
+    border-left: 2px solid red;
+  }
+  .active{
+    color: red !important;
+   
+  }
   /***************** Conatiner Oferta*/
   .container_main {
     max-width: 300px;
