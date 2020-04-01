@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/simple-sidebar.css">
+
+
+  <!-- Modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+
   <!-- Scroll -->
   <script src="js/smooth-scroll.min.js"></script>
   <script>
@@ -26,6 +32,12 @@
       callback: function (anchor, toggle) {} // Function to run after scrolling
     });
   </script>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -99,10 +111,15 @@
           <!-- Modal -->
           <div class="boton_modal">
             
-              <img src="img/games/boton.jpg" alt="">
+              <img  onclick="sweetalertclick()" src="img/games/boton.jpg" alt="">
             
           </div>
           
+          <div class="container">
+            <h1>Seet Alert</h1>
+            <button onclick="sweetalertclick()" type="button" class="w3-button w3-blue"> </button>
+          </div>
+  
 
 
 
@@ -281,11 +298,20 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
   </script>
+
+
+
+
   <script src="js/simplyCountdown.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/index.js"></script>
   <script src="js/navbar.js"></script>
   <!--load all styles -->
+  <script>
+    function sweetalertclick(){
+      Swal.fire('Hello world!')
+    }
+  </script>
 </body>
 
 </html>
