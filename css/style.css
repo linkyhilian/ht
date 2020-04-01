@@ -12,6 +12,9 @@ body {
 
 }
 
+.none{
+  display:none;
+}
 /***********************************************************Contenedores Principales */
 .container_offer {
   /* display flex */
@@ -711,6 +714,8 @@ footer {
     max-height: 90px;
    
   }
+  
+
   .boton_modal img{
     border-radius:100%;
     
