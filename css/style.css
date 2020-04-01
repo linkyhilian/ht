@@ -5,7 +5,6 @@
   font-family: 'Open Sans', sans-serif;
 
 }
-
 body {
   margin: 0;
   
@@ -297,7 +296,9 @@ footer {
   body {
     max-width: 100%;
   }
-
+  .active a{
+  font-weight: bold;
+  }
   .container_main {
     max-width: 1028px;
     margin: 0 auto;
@@ -586,6 +587,10 @@ footer {
 @media(max-width:984px) {
   body {
     max-width: 100%;
+  }
+
+  .active a{
+    font-weight: bold;
   }
 
   /***************** Conatiner Oferta*/

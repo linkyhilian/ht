@@ -70,10 +70,7 @@
   border-left: 2px solid red;
 }
 
-.sidebar_item.active{
-  color: red;
-  border-left: 2px solid red;
-}
+
 
 .menu_side_active{
  display: block;

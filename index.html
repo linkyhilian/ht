@@ -13,6 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/simple-sidebar.css">
+  <!-- Scroll -->
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 98, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function (anchor, toggle) { } // Function to run after scrolling
+    });
+  </script>
 </head>
 
 <body>
@@ -27,13 +39,13 @@
       <nav>
         <ul>
           <li class="item">
-            <a href="#ofertas">HotWeek</a>
+            <a data-scroll href="#ofertas">HotWeek</a>
           </li>
           <li class="item">
-            <a href="#juego">Juego</a>
+            <a data-scroll href="#juego">Juego</a>
           </li>
           <li class="item">
-            <a href="#tiendas">Tiendas</a>
+            <a data-scroll href="#tiendas">Tiendas</a>
           </li>
         </ul>
       </nav>
@@ -49,35 +61,6 @@
           </div>
         
       </div>
-     
-
-    <!-- <nav>
-      <ul class="menu">
-        <li class="bars_icon" onclick="sidebarToggle()"><i class="fas fa-bars"></i></li>
-
-        <li class="logo"><img class="logo_img" src="img/others/Logo_white.png" alt=""></li>
-        <li class="item">
-          <a href="#ofertas">HotSale</a>
-        </li>
-        <li class="item">
-          <a href="#juego">Juego</a>
-        </li>
-        <li class="item">
-          <a href="#tiendas">Tiendas</a>
-        </li>
-        <div class="container_cuentas">
-          <li>
-            <div class="container_ncuenta">
-              <div class="ntexto">
-                Termina en
-              </div>
-              <div id="cuenta">
-              </div>
-            </div>
-          </li>
-        </div>
-      </ul>
-    </nav> -->
 
   </div>
   </header>
@@ -273,11 +256,13 @@
 
       </div>
   </footer>
-
+  <script src="js/jquery-3.4.1.js"></script>
+<!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/simplyCountdown.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/index.js"></script>
-  <script src="js/sticky.js"></script>
+  <script src="js/navbar.js"></script>
   <!--load all styles -->
 </body>
 
