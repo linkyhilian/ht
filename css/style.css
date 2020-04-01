@@ -10,7 +10,10 @@ body {
   
 
 }
-
+.img-test{
+  height: 300px;
+  width: 300px;
+}
 .none{
   display:none;
 }

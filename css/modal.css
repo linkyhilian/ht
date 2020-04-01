@@ -52,9 +52,9 @@
 
 .modal-header, .modal-footer{
   padding: 8px 16px;
-  background: #34495e ;
   color: white;
 }
+
 .modal-body{
   padding:20px 16px 
 }
