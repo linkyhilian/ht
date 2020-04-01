@@ -386,12 +386,12 @@ footer {
     width: 300px;
 
   }
-
+  .h1_size{
+    font-size: 34px;
+  }
   .info {
     width: 100%;
-
   }
-
   h3 {
     margin: 0 0 5px;
   }
@@ -400,7 +400,9 @@ footer {
     color: #FF5751;
     font-weight: bold;
   }
-
+  .text_info{
+    font-size: 14px;
+  }
   .text {
     color: #154f80;
   }
