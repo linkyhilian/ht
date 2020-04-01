@@ -189,6 +189,7 @@ footer {
   border-radius: 20.5px;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .submit:hover {
@@ -349,13 +350,11 @@ footer {
     position: absolute;
     width: 100%;
   }
-
   /*************** Container Juego*/
   .container_game {
     padding-top: 120px;
     padding-bottom: 50px;
   }
-
   .game_info {
     /* display flex */
     display: -ms-flexbox;
@@ -382,10 +381,9 @@ footer {
     -ms-flex-align: flex-start;
     align-items: flex-start;
     /*Propios*/
-
     width: 300px;
-
   }
+
   .h1_size{
     font-size: 34px;
   }
@@ -442,6 +440,7 @@ footer {
     border: none;
     border-radius: 200px;
     cursor: pointer;
+    outline: none;
   }
 
   .action_play:hover {
