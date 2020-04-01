@@ -704,13 +704,17 @@ footer {
     height: 38px;
   }
   .boton_modal{
-
-    border: 2px solid red;
+    position: absolute;
+    top: 320px;
+    right:35px ;
+    max-width: 90px;
+    max-height: 90px;
+   
   }
   .boton_modal img{
     border-radius:100%;
-    max-width: 90px;
-    max-height: 90px;
+    
+    width: 80px;
   }
 
 
