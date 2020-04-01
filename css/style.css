@@ -9,8 +9,8 @@ body {
   margin: 0;
 }
 .img-test{
-  height: 300px;
-  width: 300px;
+  max-height: 300px;
+  max-width: 300px;
 }
 .none{
   display:none;
