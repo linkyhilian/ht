@@ -158,31 +158,39 @@ ul{
   }
 }
 
-.simply-days-section div .simply-amount:after{
+.simply-days-section div .simply-word:after{
   content: ":";
   color: white ;
   position: relative;
-  top: 1px;
-  right:-18px;
+  top: -39px;
+  left:15px;
   font-size: 18px;
 }
-.simply-hours-section div .simply-amount:after{
+.simply-hours-section div .simply-word:after{
   content: ":";
   color: white ;
   position: relative;
-  top: 1px;
-  right:-18px;
+  top: -39px;
+  left: 6px;
   font-size: 18px;
 }
-.simply-minutes-section div .simply-amount:after{
+.simply-minutes-section div .simply-word:after{
   content: ":";
   color: white ;
   position: relative;
-  top: 1px;
-  right:-18px;
+  top: -39px;
+  left: 18px;
   font-size: 18px;
 }
 
+.simply-seconds-section div .simply-word:after{
+  content: "";
+  color: white ;
+  position: relative;
+  top: -39px;
+  left: 18px;
+  font-size: 18px;
+}
 /* Cuenta Regresiva */
 
 

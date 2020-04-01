@@ -72,10 +72,25 @@
   background-color: #ebeae7;
   width: 60vh;
   height: 60vw;
-  flex:1;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   
 }
 
 .modal_texto{
   color:#ff5751;
+}
+
+.container_p{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 180px;
+  max-height: 180px;
 }
