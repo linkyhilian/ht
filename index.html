@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/others/favicon.webp" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script defer src="fontawesome-free-5.13.0-web/js/all.js"></script>
+
   <!--load all styles -->
   <!-- css propios -->
   <link rel="stylesheet" href="css/style.css">
@@ -22,7 +23,7 @@
       speed: 2000, // Integer. How fast to complete the scroll in milliseconds
       easing: 'easeInOutCubic', // Easing pattern to use
       offset: 98, // Integer. How far to offset the scrolling anchor location in pixels
-      callback: function (anchor, toggle) { } // Function to run after scrolling
+      callback: function (anchor, toggle) {} // Function to run after scrolling
     });
   </script>
 </head>
@@ -33,9 +34,9 @@
 
       <div class="bars_icon" onclick="sidebarToggle()"><i class="fas fa-bars"></i></div>
 
-      
+
       <div class="nav_logo_container"><img class="logo_img" src="img/others/Logo_white.png" alt=""></div>
-      
+
       <nav>
         <ul>
           <li class="item">
@@ -51,39 +52,39 @@
       </nav>
 
       <div class="container_cuentas">
-        
-          <div class="container_ncuenta">
-            <div class="ntexto">
-              Termina en
-            </div>
-            <div id="cuenta">
-            </div>
+
+        <div class="container_ncuenta">
+          <div class="ntexto">
+            Termina en
           </div>
-        
+          <div id="cuenta">
+          </div>
+        </div>
+
       </div>
 
       <div class="container_ncuenta1">
         <div class="container_center">
-        <div class="ntexto1">
-          Termina en
-        </div>
-        <div id="cuenta1">
+          <div class="ntexto1">
+            Termina en
+          </div>
+          <div id="cuenta1">
+          </div>
         </div>
       </div>
-    </div>
       <div class="overlay"></div>
-  </div>
+    </div>
   </header>
   <!-- Contenedor de Sidebar -->
-<section class="nav-sidebar" > 
-  <div class="menu_side_background"></div>
-  <div class="menu_side">
+  <section class="nav-sidebar">
+    <div class="menu_side_background"></div>
+    <div class="menu_side">
 
-    <div class="sidebar_item "><a data-scroll href="#ofertas">HotWeek</a></div>
-    <div class="sidebar_item "><a data-scroll href="#tiendas">Tiendas</a></div>
+      <div class="sidebar_item "><a data-scroll href="#ofertas">HotWeek</a></div>
+      <div class="sidebar_item "><a data-scroll href="#tiendas">Tiendas</a></div>
 
-  </div>
-</section>
+    </div>
+  </section>
   <!-- Contenedor de Sidebar -->
   <!-- Contenedor de ofertas -->
   <section id="ofertas" class="offers">
@@ -93,11 +94,20 @@
         <div class="offer_head">
           <img src="img/offerts/ht.png" alt="HotSale">
         </div>
-       
+
         <div class="offer_footer">
+          <!-- Modal -->
           <div class="boton_modal">
-            <img src="img/games/boton.jpg" alt="">
+            
+              <img src="img/games/boton.jpg" alt="">
+            
           </div>
+          
+
+
+
+
+          <!-- Modal -->
           <div><img src="img/offerts/Promo1.png" alt=""></div>
           <div><img src="img/offerts/Promo2.png" alt=""></div>
           <div><img src="img/offerts/Promo3.png" alt=""></div>
@@ -267,8 +277,10 @@
       </div>
   </footer>
   <script src="js/jquery-3.4.1.js"></script>
-<!-- jQuery Custom Scroller CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+  </script>
   <script src="js/simplyCountdown.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/index.js"></script>
