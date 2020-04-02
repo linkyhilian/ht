@@ -183,14 +183,14 @@ ul{
   position: relative;
   font-size: 18px;
   top: -50px;
-  left: 29.5px;
+  left: 29.7px;
 }
 .simply-hours-section .box::after{
   content: ":";
   color: white ;
   position: relative;
   top: -50px;
-  left: 29.5px;
+  left: 29.7px;
   font-size: 18px;
 }
 .simply-minutes-section .box::after{
@@ -198,7 +198,7 @@ ul{
   color: white ;
   position: relative;
   top: -50px;
-  left: 29.5px;
+  left: 29.7px;
   font-size: 18px;
 }
 .simply-seconds-section .box::after{
