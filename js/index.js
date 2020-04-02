@@ -21,7 +21,8 @@ function sidebarToggle(){
     img.classList.toggle('none')
     
    
-}
+};
+
 menu_background.addEventListener('click', () =>{
 
     sidebarToggle();
