@@ -1,20 +1,21 @@
 header {
 
-  background: rgb(255, 87, 81, 0.4);
+  background: rgba(255, 87, 81, 0.4);
   position: fixed;
   width: 100vw;
   z-index: 10;
 }
+
 /* Internet Explorer */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   header {
 
-    background: rgb(255, 87, 81);
+    background: rgba(255, 87, 81, 0.4);
     position: fixed;
     width: 100vw;
     z-index: 10;
   }
-  }
+}
 .nav_container {
   /* display flex */
   display: -ms-flexbox;
