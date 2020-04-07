@@ -33,6 +33,8 @@ header {
 
   /* Propios */
   width: 100%;
+  height: 142px;
+  transition: 0.1s;
   max-width: 900px;
   margin: 0 auto;
   padding: 8px 0;
@@ -210,9 +212,17 @@ ul{
   left: 16px;
   font-size: 18px;
 }
-
 /* Cuenta Regresiva */
 
+/******************************************** Desktop */
+@media(min-width:983px){
+  #navbar{
+  height:142px;
+  width:100%;
+  transition: 0.1s;
+
+}
+}
 
 /******************************************** Mobile */
 @media (max-width:984px) {
