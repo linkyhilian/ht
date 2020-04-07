@@ -212,7 +212,7 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 138px;
+  height: 120px;
 }
 
 .item_text {
@@ -305,8 +305,8 @@ footer {
   }
 
   .offer_head>img {
-    width: 287.4px;
-    height: 280px;
+    width: 387.4px;
+    height: 380px;
   }
 
   .offer_footer {
@@ -442,7 +442,7 @@ footer {
   }
   /*************** Container tiendas*/
   .container_shop {
-    padding-top: 34.2px;
+    padding-top: 20.2px; /*32 px */
   }
 
   .shop {
@@ -482,7 +482,7 @@ footer {
   }
 
   .style_title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.2;
     letter-spacing: 7.2px;
@@ -493,14 +493,16 @@ footer {
   .submit {
     line-height: 1.2;
     letter-spacing: 1.05px;
-    padding: 10px 27px;
-    margin: 60.1px 0px 29.4px 0px;
-    font-size: 21px;
+    padding: 8px 27px;
+    /* margin: 60.1px 0px 29.4px 0px; */
+    font-size: 18px;
+    height: 38px;
   }
 
   .submit:hover {
     background-color: rgb(221, 73, 68);
   }
+
   /*************** Container footer*/
   footer {
     height: 261.5px;
@@ -599,6 +601,10 @@ footer {
    
   }
   /***************** Conatiner Oferta*/
+  .container_offer{
+  padding-top: 100px;
+  }
+
   .container_main {
     max-width: 300px;
     margin: 0 auto;
@@ -641,7 +647,7 @@ footer {
   }
 
   .style_title {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 4.8px;
@@ -662,10 +668,15 @@ footer {
     line-height: 1.2;
     letter-spacing: 1.05px;
     padding: 10px 27px;
-    font-size: 21px;
+    font-size: 18px;
+  }
+
+  .shop_button{
+    height:110px;
   }
 
   /*************** Container footer*/
+
   footer {
     height: 100%;
     padding-top: 19.8px;
