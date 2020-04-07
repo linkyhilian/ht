@@ -15,7 +15,6 @@ body {
 .none{
   display:none;
 }
-
 /***********************************************************Contenedores Principales */
 .container_offer {
   /* display flex */
@@ -43,7 +42,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .container_game {
   /* display flex */
   display: -ms-flexbox;
@@ -70,7 +68,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .container_shop {
   /* display flex */
   display: -ms-flexbox;
@@ -97,7 +94,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .container_footer {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -121,22 +117,18 @@ body {
   /* Propios */
   height: 200px;
 }
-
 /***********************************************************Secciones*/
 .offers {
   background-color: #FF5751;
   background-image: linear-gradient(60deg, #FF5751, #FFC837);
   background-repeat: no-repeat;
 }
-
 .game {
   background-color: white;
 }
-
 .shops {
   background-color: #FFC837;
 }
-
 footer {
   background-color: #2a2f33;
 }
@@ -578,6 +570,7 @@ footer {
 
   .logo {
     height: 53px;
+    width: 220px;
   }
 
 }
@@ -738,5 +731,27 @@ footer {
     
     width: 80px;
   }
+  
 
+}
+
+
+
+
+/* Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  header {
+
+    background: rgba(255, 87, 81, 0.4);
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+  }
+}
+
+/* Cambio Especifico para otros Navegadores que no sean Edge ni Explorer */
+@supports not (-ms-ime-align: auto) {
+  .offer_footer{
+    justify-content: space-evenly
+  }
 }

@@ -150,9 +150,9 @@ ul{
 
 
 @media(max-width:768px) {
-  #cuenta, .ntexto{
+  /* #cuenta, .ntexto{
     display: none
-  }
+  } */
 }
 
 @media(min-width:768px) {
@@ -222,6 +222,7 @@ ul{
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    flex-direction: column;
 
     /* align-items */
     -webkit-align-items: center;
@@ -245,6 +246,7 @@ ul{
     position:absolute;
     left:19px;
     font-size: 26px;
+    top:10px;
     }
 
     .nav_logo_container{
@@ -255,7 +257,9 @@ ul{
       display: none;  
       }
 
-      
+  .ntexto{
+    margin-top:0px;
+  }  
 }
 
 

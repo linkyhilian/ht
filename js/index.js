@@ -5,14 +5,6 @@ var sidebar = document.querySelector('.nav-sidebar');
 var img = document.querySelector('.boton_modal');
 
 
-
-// document.querySelector('body').addEventListener('click', function(event){
-//   // event.target 
-//   console.log(event.target)
-// })
-
-
-
 // sidebar
 function sidebarToggle(){
     menu_side.classList.toggle('menu_side_active');
@@ -27,9 +19,6 @@ menu_background.addEventListener('click', () =>{
 
     sidebarToggle();
 });
-
-
-
 
 // Sticky
 window.addEventListener('scroll', function() { 
@@ -46,3 +35,22 @@ if(!menu_side.classList.contains('menu_side_active')){
 }
 });
 
+// navbar 
+window.addEventListener('scroll', function() { 
+  if(!menu_side.classList.contains('menu_side_active')){
+    if (window.pageYOffset > 136) { 
+     img.style.position = 'fixed';
+      img.style.top = '180px';
+      
+    } else {
+      img.style.position = 'absolute';
+      img.style.top = '';
+    }
+  
+  }
+  });
+
+  $("#test").on("click",function(event){
+    event.preventDefault();
+    console.log("hola");
+ });
