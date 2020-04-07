@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
 if(!menu_side.classList.contains('menu_side_active')){
   if (window.pageYOffset > 136) { 
    img.style.position = 'fixed';
-    img.style.top = '180px';
+    img.style.top = '280px';
     
   } else {
     img.style.position = 'absolute';
@@ -41,10 +41,18 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 522 || document.documentElement.scrollTop > 522) {
-    document.getElementById("navbar").style.height = "100px";
-    document.getElementById("nav_container").style.height="100px"
+
+    document.getElementById("nav_container").classList.add('nav_expand');
+    document.getElementById("navbar").classList.add('nav_expand');
+
+    document.getElementById("navbar").classList.remove('nav_normal');
+    document.getElementById("nav_container").classList.remove('nav_normal');
   } else {
-    document.getElementById("navbar").style.height = "142px";
-    document.getElementById("nav_container").style.height="142px"
+
+    document.getElementById("navbar").classList.add('nav_normal');
+    document.getElementById("nav_container").classList.add('nav_normal');
+
+    document.getElementById("navbar").classList.remove('nav_expand');
+    document.getElementById("nav_container").classList.remove('nav_expand');
   }
 }

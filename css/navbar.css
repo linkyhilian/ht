@@ -33,7 +33,7 @@ header {
 
   /* Propios */
   width: 100%;
-  height: 142px;
+  
   transition: 0.1s;
   max-width: 900px;
   margin: 0 auto;
@@ -216,11 +216,17 @@ ul{
 
 /******************************************** Desktop */
 @media(min-width:983px){
-  #navbar{
-  height:142px;
-  width:100%;
-  transition: 0.1s;
+  
+.nav_expand{
+  height:100px !important;
+}
 
+.nav_normal{
+  height: 140px !important;
+}
+
+.nav_container{
+  height: 142px;
 }
 }
 
@@ -260,7 +266,7 @@ ul{
     }
 
     .nav_logo_container{
-      padding-top: 15.9px;
+      padding-top: 30.9px;
     }
 
     nav{
