@@ -138,6 +138,9 @@ footer {
   max-width: 227.4px;
   max-height: 227.4px;
 }
+.shop_link{
+  text-decoration: inherit;
+}
 /****************** Contenido de Tiendas*/
 
 .shop_head,
@@ -443,10 +446,6 @@ footer {
   /*************** Container tiendas*/
   .container_shop {
     padding-top: 20.2px; /*32 px */
-  }
-
-  .shop_link{
-    text-decoration: inherit;
   }
 
   .shop {
