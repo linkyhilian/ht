@@ -445,6 +445,10 @@ footer {
     padding-top: 20.2px; /*32 px */
   }
 
+  .shop_link{
+    text-decoration: inherit;
+  }
+
   .shop {
     width: 238px;
     height: 363px;
