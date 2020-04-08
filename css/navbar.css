@@ -4,6 +4,7 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 10;
+  transition:0.2s;
 }
 
 /* Internet Explorer */
@@ -34,7 +35,7 @@ header {
   /* Propios */
   width: 100%;
   
-  transition: 0.1s;
+  transition: 0.2s;
   max-width: 900px;
   margin: 0 auto;
   padding: 8px 0;
