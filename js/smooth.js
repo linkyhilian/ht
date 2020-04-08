@@ -3,6 +3,6 @@ smoothScroll.init({
       selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
       speed: 2000, // Integer. How fast to complete the scroll in milliseconds
       easing: 'easeInOutCubic', // Easing pattern to use
-      offset: 140, // Integer. How far to offset the scrolling anchor location in pixels
+      offset: 98, // Integer. How far to offset the scrolling anchor location in pixels
       callback: function (anchor, toggle) {} // Function to run after scrolling
     });
