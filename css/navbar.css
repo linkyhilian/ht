@@ -36,7 +36,7 @@ header {
   width: 100%;
   
   transition: 0.2s;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 8px 0;
 }
@@ -44,7 +44,7 @@ header {
 .nav_container nav{
   margin: 0;  
   flex:1;
-  margin-left:70.3px ;
+  margin-left:120px ;
   }
 .bars_icon{
   display:none;
