@@ -73,6 +73,10 @@ ul {
   padding-top:10px;
 
 }
+.logo_img{
+  width: 156px; 
+  height: 40px;
+}
 /* Cuenta Regresiva */
 .container_cuentas{
   order: 3;
