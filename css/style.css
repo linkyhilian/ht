@@ -255,7 +255,7 @@ footer {
 
 }
 
-.reserved {
+.reserved_container {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: flex-end;
   align-self: flex-end;
@@ -560,7 +560,7 @@ a{
     border-radius: 150px;
   }
 
-  .reserved {
+  .reserved_container{
     width: 399px;
   }
 
@@ -712,10 +712,12 @@ a{
     letter-spacing: 1.05px;
     padding: 10px 27px;
     font-size: 18px;
+    width: 328px;
+    height: 42px;
   }
 
   .shop_button{
-    height:110px;
+    margin-bottom: 42px;
   }
 
   .shop_title {
@@ -739,13 +741,14 @@ a{
 
   footer {
     height: 100%;
-    padding-top: 19.8px;
+    padding-top: 44px;
   }
 
   .container_footer {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: auto;
   }
 
   .social_networks {
@@ -754,6 +757,7 @@ a{
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 97px;
   }
 
   .text_s {
@@ -764,17 +768,23 @@ a{
     border-radius: 150px;
   }
 
-  .reserved {
+  .reserved_container{
+    display: flex;
+    justify-content: center;
     order: 3;
     width: 100%;
     text-align: center;
 
   }
-
+  .reserved{
+    width:180px;
+    
+  }
   .text_r {
-    font-size: 10px;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 1.2;
     color: #ffffff;
+
 
   }
 
@@ -786,6 +796,7 @@ a{
 
   .logo {
     height: 38px;
+    margin-bottom: 106.9px;
   }
 
   .boton_modal{
