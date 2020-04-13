@@ -22,19 +22,15 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   -webkit-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-
   /* align-items */
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-
   /* Propios */
   width: 100%;
-  
   transition: 0.2s;
   max-width: 1000px;
   margin: 0 auto;
@@ -108,7 +104,7 @@ ul{
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 12px;
 }
 .simply-word{
   color:#ffffff;
@@ -189,14 +185,14 @@ ul{
   color: white;
   position: relative;
   font-size: 18px;
-  top: -50px;
+  top: -46.9px;
   left: 29.7px;
 }
 .simply-hours-section .box::after{
   content: ":";
   color: white ;
   position: relative;
-  top: -50px;
+  top: -46.9px;
   left: 29.7px;
   font-size: 18px;
 }
@@ -204,7 +200,7 @@ ul{
   content: ":";
   color: white ;
   position: relative;
-  top: -50px;
+  top: -46.9px;
   left: 29.7px;
   font-size: 18px;
 }
@@ -212,7 +208,7 @@ ul{
   content: ":";
   color: white ;
   position: relative;
-  top: -40px;
+  top: -46.9px;
   left: 16px;
   font-size: 18px;
 }
