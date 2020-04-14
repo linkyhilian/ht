@@ -1,16 +1,14 @@
 .nav-sidebar{
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  top:57px;
+  z-index: -1;
+  top:0px;
 }
-
 .menu_side_background{
   background-color: rgba(0,0,0,0.4);
   width: 100vw;
   height: 100vh;
   display:none;
+  
 }
 
 .menu_side_background_active{
@@ -91,7 +89,9 @@
 }
 .menu_side_active{
  display: block;
- transform:translate(70vw);
+ width: 70vw;
+ transform:translate(35vw);
+ z-index: 999;
 }
 .menu_side_inactive{
   display: block;

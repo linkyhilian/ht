@@ -9,10 +9,10 @@ var img = document.querySelector('.boton_modal');
 // sidebar
 function sidebarToggle(){
     // sidebar.classList.remove('none');
-    sidebar.classList.toggle('none');
+  
     menu_side.classList.toggle('menu_side_active');
     menu_background.classList.toggle('menu_side_background_active');
-    sidebar.classList.toggle('.menu_side_active')
+    sidebar.classList.toggle('menu_side_active')
     img.classList.toggle('none')
 };
 
