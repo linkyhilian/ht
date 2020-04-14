@@ -1,17 +1,16 @@
-.flex{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.flexSide{
+  /* width: 100%; */
+  /* height: 100%; cambiar esto para poder ver los cambios de height */
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center; */
 }
 
-.modal{
-  display: none;
+.modalSide{
+  display: block;
   position: fixed;
   overflow: auto;
   left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0,0.4);
@@ -19,13 +18,12 @@
 }
 
 
-.contenido-modal{
+.contenido-side{
   position: relative;
   background-color: white;
-  margin: 0 auto;
-  width: 90%;
+  width: 70%;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0,0.4);
-  animation-name: modal;
+  animation-name: side;
   animation-duration: 1s ;
 
 
@@ -33,13 +31,13 @@
 }
 
 
-@keyframes modal{
-  from{top: -330px; opacity: 0;}
-  to{top:0; opacity: 1;}
+@keyframes side{
+  from{left: -330px; opacity: 0;}
+  to{left:0; opacity: 1;}
 
 }
 
-.close{
+.closeSide{
  color: #ff5751;
  font-size: 30px;
  font-weight: bold;
@@ -48,30 +46,31 @@
  right: 5px;
 }
 
-.close:hover{
+.closeSide:hover{
   color:#dd3f39;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-header, .modal-footer{
+.side-header, .side-footer{
   display:flex;
   justify-content: flex-end;
   color: white;
 }
 
-.modal-body{
+.side-body{
   display:flex;
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
+  height: 200vw;
   
   
 }
-.modal_container_action{
+.side_container_action{
   background-color: #ebeae7;
-  width: 60vh;
-  height: 60vw;
+  width: 100%;
+  height: 100%;
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -82,7 +81,7 @@
 }
 
 
-.modal_texto{
+.side_texto{
   color:#ff5751;
 }
 
