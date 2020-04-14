@@ -93,6 +93,10 @@
  display: block;
  transform:translate(70vw);
 }
+.menu_side_inactive{
+  display: block;
+  transform:translate(-70vw);
+}
 /* Destok-Table */
 
 @media (min-width:986px){

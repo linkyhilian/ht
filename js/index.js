@@ -10,7 +10,7 @@ var img = document.querySelector('.boton_modal');
 function sidebarToggle(){
     menu_side.classList.toggle('menu_side_active');
     menu_background.classList.toggle('menu_side_background_active');
-    sidebar.classList.toggle('none')
+    sidebar.classList.toggle('.menu_side_active')
     img.classList.toggle('none')
 };
 
