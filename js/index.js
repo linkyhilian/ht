@@ -12,8 +12,6 @@ function sidebarToggle(){
     menu_background.classList.toggle('menu_side_background_active');
     sidebar.classList.toggle('none')
     img.classList.toggle('none')
-    
-   
 };
 
 menu_background.addEventListener('click', () =>{
