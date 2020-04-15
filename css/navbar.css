@@ -217,7 +217,7 @@ ul{
 /******************************************** Desktop */
 @media(min-width:983px){
   
-.nav_expand{
+.nav_contract{
   height:100px !important;
 }
 
@@ -248,6 +248,15 @@ ul{
     /* Propios */
     width: 100%;
     padding: 0;
+    transition: 0.2s;
+  }
+
+  .nav_contract{
+    height:140px !important;
+  }
+
+  .nav_normal{
+    height: 175.5px !important;
   }
 
   .bars_icon{

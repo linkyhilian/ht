@@ -42,8 +42,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 522 || document.documentElement.scrollTop > 522) {
 
-    document.getElementById("nav_container").classList.add('nav_expand');
-    document.getElementById("navbar").classList.add('nav_expand');
+    document.getElementById("nav_container").classList.add('nav_contract');
+    document.getElementById("navbar").classList.add('nav_contract');
 
     document.getElementById("navbar").classList.remove('nav_normal');
     document.getElementById("nav_container").classList.remove('nav_normal');
@@ -52,7 +52,7 @@ function scrollFunction() {
     document.getElementById("navbar").classList.add('nav_normal');
     document.getElementById("nav_container").classList.add('nav_normal');
 
-    document.getElementById("navbar").classList.remove('nav_expand');
-    document.getElementById("nav_container").classList.remove('nav_expand');
+    document.getElementById("navbar").classList.remove('nav_contract');
+    document.getElementById("nav_container").classList.remove('nav_contract');
   }
 }
