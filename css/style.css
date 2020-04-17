@@ -199,8 +199,8 @@ footer {
   margin: 23.7px 48.6px 37.4px 16.6px;
   width: 187px;
   height: 50px;
-  font-size: 14.8px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.31;
   color: #2a2f33;
 }
 
@@ -305,7 +305,7 @@ a{
   .subtitle {
     font-size: 37px;
     font-weight: bold;
-    line-height: 1.16;
+    line-height: 1.32;
     letter-spacing: -1.48px;
     color: #ffffff;
     margin: 0 34px 0 0;
@@ -831,5 +831,5 @@ a{
     z-index: 10;
   }
 
-  
+
 }
