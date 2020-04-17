@@ -406,6 +406,7 @@ a{
   .game_action {
     width: 400px;
     height: 400px;
+    text-align: center;
   }
 
   .game_action img {
@@ -425,7 +426,7 @@ a{
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 2px;
     box-sizing: border-box;
   }
 
@@ -436,7 +437,7 @@ a{
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 200px;
+    border-radius: 2px;
     cursor: pointer;
     outline: none;
   }
@@ -677,7 +678,27 @@ a{
   .game {
     display: none;
   }
+  .container_text {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
 
+  .text.text_info{
+    color: #004f86;
+    font-size: 12px;
+  }
+  .title_modal{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff5751;
+  }
+  
   /*************** Container tiendas*/
   .container_shop {
     /* display direction */
@@ -830,6 +851,73 @@ a{
     width: 100vw;
     z-index: 10;
   }
+}
 
+input[type=text]:valid, input[type=email]:valid{
+  border: 2px solid green;
+}
+input[type=text]:focus:invalid, input[type=email]:focus:invalid{
+  border: 2px solid rgb(211, 82, 82);
+}
 
+input[type=submit]:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.text_label{
+  font-size: 18px;
+  color: #004f86;
+}
+
+.required{
+  color: rgb(211, 82, 82);
+}
+
+.action_play {
+  width: 100%;
+  background-color: #FF5751;
+  color: white;
+  padding: 14px 20px;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+#name_message, #email_message{
+  font-size: 11px;
+  margin-top: 3px;
+  color: #004f86;
+  display: none;
+}
+/* label */
+.susc_label{
+  font-size: 12px;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+/* input */
+#susc{
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
+}
+#date, .date_label{
+  display: none;
+}
+.game_info, .game_action{
+  /* width: 60%; */
+  margin: 0 auto;
+}
+
+.game_action{
+  text-align: center;
 }

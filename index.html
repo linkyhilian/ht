@@ -117,14 +117,27 @@
                   <span class="close" id="close"><i class="fas fa-times-circle"></i></span>
                 </div>
                 <div class="modal-body">
-                  <div class="modal_container_action">
-                    <h1 class="modal_texto">UPS</h1>
-                    <div class="modal_texto container_p">
-                      <span>Ya agotaste</span>
-                      <span>tu chance de hoy,</span>
-                      <span>intentá mañana</span>
+                  <h2 class="title_modal">¡Probá tu <span> SUERTE! </span></h2>
+                  <div class="game_action">
+                    <!-- <img src="img/games/ruleta.png" alt=""> -->
+                     <!-- Ruleta -->
+                     <canvas id="canvas2" height="248" width="248" ></canvas>
+                      <!-- Mensaje -->
+                      <div class="message_result"></div>
+                      <!-- Fin de Mensaje -->
+                    <!-- Fin Ruleta -->
+                    <!-- Mensaje de error -->
+                    <div class="modal_container_action">
+                      <h2 class="modal_texto">UPS</h2>
+                      <div class="modal_texto container_p">
+                        <span>Ya agotaste</span>
+                        <span>tu chance de hoy,</span>
+                        <span>intentá mañana</span>
+                      </div>
                     </div>
+                    <!-- Fin Mensaje de error -->
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -146,9 +159,9 @@
       <div class="container_game">
         <div class="game_info">
           <div class="info">
-            <h1 id="juego"  class="title h1_size">
+            <h2 id="juego"  class="title h1_size">
               ¡Probá tu <span> SUERTE! </span>
-            </h1>
+            </h2>
             <div class="text">
               <h3 class="text">
                 Dale vuelta a la ruleta y consiguí
@@ -161,19 +174,42 @@
               <span class="text text_info">*Si ganás, tendra 15 minutos para reclamar tu premio.</span>
             </div>
             <div class="form">
-              <form action="">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" class="container_text" placeholder="">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" class="container_text" placeholder="">
-                <input type="submit" id="test" class="action_play" value="Jugá y Ganá">
+              <form name="form" method="POST" autocomplete="on" onsubmit="return send();">
+                <!-- Metodo get temporal, solo para efectos de prueba -->
+                <label for="name" class="text_label" >Nombre </label>
+                  <input type="text" id="name" name="name" class="container_text text" placeholder="Ingrese el nombre" required minlength="3" maxlength="40">
+                  <p id="name_message"></p>
+                <label for="email" class="text_label" >Email </label>
+                  <input type="email" id="email" name="email" class="container_text text" placeholder="Introduzca el correo electrónico" required minlength="6" maxlength="40" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                  <p id="email_message"></p>
+                <label class="susc_label text">
+                  <input type="checkbox" name="checkbox" id="susc" value="0"> <span>Deseo suscribirme al Newletter DM</span> </label><br>
+                <label for="date" class="text_label date_label" >Fecha</label>
+                  <input type="text" id="date" name="date" class="container_text text" >
+                <input type="submit" id="test" class="action_play" value="Jugá y Ganá"> 
+                  <p id="resp"> </p>
               </form>
             </div>
           </div>
         </div>
         <div class="game_action">
-          <!-- Aqui ira la ruleta eliminar el alt -->
-          <img src="img/games/ruleta.png" alt=""> 
+          <!-- <img src="img/games/ruleta.png" alt=""> -->
+           <!-- Ruleta -->
+           <canvas id="canvas" height="400" width="400" ></canvas>
+           <!-- Mensaje -->
+           <div class="message_result"></div>
+           <!-- Fin de Mensaje -->
+         <!-- Fin Ruleta --> 
+         <!-- Mensaje de error -->
+         <div class="modal_container_action">
+          <div class="modal_texto container_p">
+            <h2 class="modal_texto">UPS</h1>
+            <span>Ya agotaste</span>
+            <span>tu chance de hoy,</span>
+            <span>intentá mañana</span>
+          </div>
+        </div>
+        <!-- Fin Mensaje de error -->
         </div>
       </div>
     </div>
@@ -181,11 +217,11 @@
   <!-- Contenedor de juego -->
 
   <!-- Contenedor de tiendas -->
-  <section class="shops">
-    <div  class="container_main">
+  <section id="tiendas" class="shops">
+    <div class="container_main">
       <div class="container_shop">
         <div class="shop_title">
-          <h3 id="tiendas" class="style_title">Tiendas seleccionadas</h3>
+          <h3 class="style_title">Tiendas seleccionadas</h3>
         </div>
         <div class="shop_items">
 
@@ -367,12 +403,19 @@
   <script src="js/countdown.js"></script>
   <!-- Countdown -->
 
+  <!-- Juego -->
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/winwheel.js"></script>
+  <script src="js/customWheel.js"></script>
+  <script src="js/sendForm.js"></script>
+
   <!-- Otros -->
   <script src="js/index.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/modal.js"></script>
   
   <!-- Otros-->
+  <!-- Juego -->
 
 </body>
 
