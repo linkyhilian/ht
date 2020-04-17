@@ -16,6 +16,22 @@ header {
     width: 100vw;
     z-index: 10;
   }
+  .simply-days-section .box::after{
+
+    display: none;
+  }
+  .simply-hours-section .box::after{
+
+    display: none;
+  }
+  .simply-minutes-section .box::after{
+
+    display: none;
+  }
+  .simply-seconds-section .box::after{
+
+    display: none;
+  }
 }
 .nav_container {
   /* display flex */
